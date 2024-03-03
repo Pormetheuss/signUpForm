@@ -1,0 +1,129 @@
+@font-face {
+    font-family: DM-Mono;
+    src: url(DMMono-Medium.ttf);
+}
+h1{
+    font-family: 'DM-Mono';
+}
+.background{
+    width: 475px;
+    height: auto;
+}
+body{
+    display: flex;
+    background-color: #F9FAFB;
+}
+.rect{
+    position: absolute;
+    display: flex;
+    background-color:rgba(0,0,0,0.5);
+    top: 69px;
+    width: 475px;
+    height: 166px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+.logo{
+    width: 90px;
+    height: 90px;
+}
+.header{
+    color: white;
+    font-size: 3rem;
+}
+em{
+    font-style: italic;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    gap: 80px;
+    background-color: white;
+}
+legend{
+    position: relative;
+    left: 14vw;
+    top: 0px;
+    color: purple;
+    font-size: 2rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.first, .last, .email, .phone, .original, .confirm{
+    display: flex;
+    flex-direction: column;
+}
+.name, .contact, .password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+input{
+    width: 250px;
+    height: 30px;
+    font-size: 1rem;
+}
+label{
+    font-size: 1.5rem;
+}
+/*
+input:focus:invalid{
+  border: 2px solid red;
+  border-radius: 10px;
+  background-color: rgb(241, 220, 220);
+}
+*/
+input:placeholder-shown{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+input:focus{
+    border: 2px solid rgb(177, 54, 177);
+    border-radius: 10px;
+    background-color: aliceblue;
+    outline: none;
+}
+::placeholder{
+    color: lightgray;
+}
+input:valid{
+    border: 2px solid rgb(17, 143, 17);
+    border-radius: 10px;
+    background-color: rgb(161, 207, 161);
+}
+input[type="email"]:invalid{
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgb(242, 176, 167);
+}
+input[type="email"]:placeholder-shown:invalid{
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: white;
+}
+button{
+    margin-top: 20px;
+    margin-left: 23vw;
+    width: 300px;
+    height: 60px;
+    border-radius: 25px;
+    font-size: 2rem;
+    color: white;
+    background-color: blueviolet;
+    border: 2px solid rgb(155, 100, 163);
+}
