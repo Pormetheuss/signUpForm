@@ -101,7 +101,7 @@ input:focus{
 ::placeholder{
     color: lightgray;
 }
-input:valid{
+input[type="text"]:valid, input[type="tel"]:valid, input[type="email"]:valid{
     border: 2px solid rgb(17, 143, 17);
     border-radius: 10px;
     background-color: rgb(161, 207, 161);
@@ -126,4 +126,24 @@ button{
     color: white;
     background-color: blueviolet;
     border: 2px solid rgb(155, 100, 163);
+}
+input.valid{
+    border: 2px solid rgb(17, 143, 17);
+    border-radius: 10px;
+    background-color: rgb(161, 207, 161);
+}
+input.invalid{
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: rgb(242, 176, 167);
+}
+span{
+    color: red;
+    position:absolute;
+    bottom: 185px;
+}
+h2{
+    font-size: 2rem;
+    color: green;
+    margin-left: 22vw;
 }
